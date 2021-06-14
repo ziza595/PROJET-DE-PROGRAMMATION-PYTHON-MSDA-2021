@@ -4,17 +4,23 @@ L'objectif de ce projet consiste à concevoir un logiciel de dessin 2D avec des 
 
 ## Travail à faire :
 <hr>
-1. Créer un module Python intitulé dessinMSDA.py
-2. Via turtle implémentez dans votre module, toutes les fonctions permettant de dessiner :
-  - Cercle ;
-  - Demi - Cercle ;
-  - Carré ;
-  - Triangle ;
-  - Rectangle ;
-  - Polygone paramétrable (Pentagone, Octogone…) ;
-  - Trapèze ;
-  - Losange ;
-  - Ellipse.
-3. En utilisant le principe de la modularité, nous testerons notre module en reproduisant les 3 figures suivantes
+<ol>
+  <li>Créer un module Python intitulé dessinMSDA.py</li>
+  <li>Via turtle implémentez dans votre module, toutes les fonctions permettant de dessiner :
+    <ul>
+      <li>Cercle ;</li>
+      <li>Demi - Cercle ;</li>
+      <li>Carré ;</li>
+      <li>Triangle ;</li>
+      <li>Rectangle ;</li>
+      <li>Polygone paramétrable (Pentagone, Octogone…) ;</li>
+      <li>Trapèze ;</li>
+      <li>Losange ;</li>
+      <li>Ellipse.</li>
+    </ul>
+  </li>
+  <li>En utilisant le principe de la modularité, nous testerons notre module en reproduisant les 3 figures suivantes
 (Maison, fusée, avion) et une figure de notre choix. Chaque figure devra faire l’objet d’un
 module(avion.py, maison.py, fusee.py, et figure_choix.py).
+</li>
+</ol>
