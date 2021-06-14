@@ -24,6 +24,8 @@ L'objectif de ce projet consiste à concevoir un logiciel de dessin 2D avec des 
 module(avion.py, maison.py, fusee.py, et figure_choix.py).
 </li>
 </ol>
-<img src="https://raw.githubusercontent.com/ziza595/PROJET-DE-PROGRAMMATION-PYTHON-MSDA-2021/main/img/fig1.png" width="500px" height="400px">
-<img src="https://raw.githubusercontent.com/ziza595/PROJET-DE-PROGRAMMATION-PYTHON-MSDA-2021/main/img/fig2.png" width="500px" height="400px">
-<img src="https://raw.githubusercontent.com/ziza595/PROJET-DE-PROGRAMMATION-PYTHON-MSDA-2021/main/img/fig3.png" width="500px" height="400px">
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ziza595/PROJET-DE-PROGRAMMATION-PYTHON-MSDA-2021/main/img/fig1.png" width="500px" height="400px">
+  <img src="https://raw.githubusercontent.com/ziza595/PROJET-DE-PROGRAMMATION-PYTHON-MSDA-2021/main/img/fig2.png" width="500px" height="400px">
+  <img src="https://raw.githubusercontent.com/ziza595/PROJET-DE-PROGRAMMATION-PYTHON-MSDA-2021/main/img/fig3.png" width="500px" height="400px">
+</p>
