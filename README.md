@@ -25,7 +25,7 @@ module(avion.py, maison.py, fusee.py, et figure_choix.py).
 </li>
 </ol>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ziza595/PROJET-DE-PROGRAMMATION-PYTHON-MSDA-2021/main/img/fig1.png" width="350px" height="250px">
-  <img src="https://raw.githubusercontent.com/ziza595/PROJET-DE-PROGRAMMATION-PYTHON-MSDA-2021/main/img/fig2.png" width="350px" height="250px">
-  <img src="https://raw.githubusercontent.com/ziza595/PROJET-DE-PROGRAMMATION-PYTHON-MSDA-2021/main/img/fig3.png" width="350px" height="250px">
+  <img src="https://raw.githubusercontent.com/ziza595/PROJET-DE-PROGRAMMATION-PYTHON-MSDA-2021/main/img/fig1.png" width="300px" height="200px">
+  <img src="https://raw.githubusercontent.com/ziza595/PROJET-DE-PROGRAMMATION-PYTHON-MSDA-2021/main/img/fig2.png" width="300px" height="200px">
+  <img src="https://raw.githubusercontent.com/ziza595/PROJET-DE-PROGRAMMATION-PYTHON-MSDA-2021/main/img/fig3.png" width="300px" height="200px">
 </p>
