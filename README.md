@@ -29,3 +29,9 @@ module(avion.py, maison.py, fusee.py, et figure_choix.py).
   <img src="https://raw.githubusercontent.com/ziza595/PROJET-DE-PROGRAMMATION-PYTHON-MSDA-2021/main/img/fig2.png" width="300px" height="200px">
   <img src="https://raw.githubusercontent.com/ziza595/PROJET-DE-PROGRAMMATION-PYTHON-MSDA-2021/main/img/fig3.png" width="300px" height="200px">
 </p>
+
+## Méthodologie à adopter :
+
+1. Définition de toutes les fonctions dans le module dessinMSDA accompagnée des commentaires de spécification ;
+2. Représentation des tableaux de flux ;
+3. La définition des 4 fonctions permettant de représenter les quatres figures.
