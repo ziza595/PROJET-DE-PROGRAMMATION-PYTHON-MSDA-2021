@@ -14,7 +14,7 @@ def carre(cote):
     compteur = 0
     while compteur < 4:
         turtle.forward(cote)
-        turtle.left(90)
+        turtle.right(90)
         compteur += 1
 
 
@@ -70,5 +70,10 @@ def ellipse(rayon):
         turtle.circle(rayon/2, 90)
         compteur += 1
 
+# personnalisation de l'interface
+turtle.title("PROJET PYTHON M1SDA AVEC TURTLE")
+turtle.bgcolor("skyblue")
+# turtle.pensize(2)
+turtle.speed(10)
 
 # fermer la boucle
