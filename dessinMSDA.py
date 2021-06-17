@@ -43,13 +43,13 @@ def polygone(cote, nb_cote):
 def trapeze(grande_base, petite_base):
     turtle.forward(max(grande_base, petite_base))
     turtle.left(120)
-    turtle.forward(max(grande_base, petite_base))
+    turtle.forward(min(grande_base, petite_base))
     turtle.left(60)
     turtle.forward(min(grande_base, petite_base))
     turtle.left(60)
-    turtle.forward(max(grande_base, petite_base))
-    turtle.left(120)
-    turtle.forward(max(grande_base, petite_base))
+    turtle.forward(min(grande_base, petite_base))
+    # turtle.left(120)
+    # turtle.forward(max(grande_base, petite_base))
 
 
 def losange(cote):
@@ -72,4 +72,3 @@ def ellipse(rayon):
 
 
 # fermer la boucle
-turtle.done()
