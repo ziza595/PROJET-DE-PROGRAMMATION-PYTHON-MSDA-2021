@@ -40,16 +40,14 @@ def polygone(cote, nb_cote):
     turtle.circle(cote, steps=nb_cote)
 
 
-def trapeze(grande_base, petite_base):
-    turtle.forward(max(grande_base, petite_base))
+def trapeze(grande_base, petite_base, hauteur):
+    turtle.forward(grande_base)
     turtle.left(120)
-    turtle.forward(max(grande_base, petite_base))
+    turtle.forward(hauteur)
     turtle.left(60)
-    turtle.forward(min(grande_base, petite_base))
+    turtle.forward(petite_base)
     turtle.left(60)
-    turtle.forward(max(grande_base, petite_base))
-    turtle.left(120)
-    turtle.forward(max(grande_base, petite_base))
+    turtle.forward(hauteur)
 
 
 def losange(cote):
@@ -74,5 +72,7 @@ def ellipse(rayon):
 turtle.title("PROJET PYTHON M1SDA AVEC TURTLE")
 turtle.bgcolor("skyblue")
 # turtle.pensize(2)
-turtle.speed(10)
 
+trapeze(100, 50, 20)
+
+turtle.done()
