@@ -1,79 +1,129 @@
 import turtle
-import dessinMSDA
+import math
 
 
+turtle.color("skyblue")
 
+# rectangle
+def rectangle(longeur, largeur):
+    compteur = 0
+    while compteur < 2:
+        turtle.forward(max(longeur, largeur))
+        turtle.left(90)
+        turtle.forward(min(longeur, largeur))
+        turtle.left(90)
+        compteur += 1
 
-turtle.color("blue")
-turtle.fillcolor('blue')
+# trapeze rectangle
+def trapeze_rect(gbase, pbase, haut, sens):
+    hyp = 200
+    if sens == "gauche":
+        turtle.forward(gbase)
+        turtle.left(120) # 150
+        turtle.forward(hyp)
+        turtle.left(60)
+        turtle.forward(pbase)
+        turtle.left(96)
+        turtle.forward(haut)
+    else:
+        turtle.forward(gbase)
+        turtle.right(120) # 150
+        turtle.forward(hyp)
+        turtle.right(60)
+        turtle.forward(pbase)
+        turtle.right(96)
+        turtle.forward(haut)
+    
+
 turtle.begin_fill()
+turtle.fillcolor("lightblue")
+# rectangle1
 turtle.penup()
-turtle.goto(92,130)
+turtle.left(30)
 turtle.pendown()
-dessinMSDA.cercle(18)
+rectangle(150, 80)
+pos1 = turtle.position()
 turtle.end_fill()
 
-#grande aile
-turtle.fillcolor('blue')
-turtle.color("blue")
 turtle.begin_fill()
+turtle.fillcolor("lightblue")
+# demi-cercle
 turtle.penup()
-turtle.goto(-116,-50)
-turtle.right(69)
+turtle.forward(150)
 turtle.pendown()
-dessinMSDA.polygone(120,5)
+turtle.circle(40, 180)
 turtle.end_fill()
 
-turtle.color("white")
-turtle.fillcolor('white')
+# rectangle2
 turtle.begin_fill()
+turtle.fillcolor("lightblue")
 turtle.penup()
-turtle.goto(-110,45)
-turtle.right(70)
-turtle.pendown()
-dessinMSDA.polygone(120,5)
-turtle.end_fill()
-
-
-turtle.color("blue")
-turtle.fillcolor('blue')
-turtle.begin_fill()
-turtle.penup()
-turtle.goto(73,153)
-turtle.left(14)
-turtle.pendown()
-dessinMSDA.rectangle(230,35)
-turtle.end_fill()
-
-#petite aile
-turtle.fillcolor('blue')
-turtle.color("blue")
-turtle.begin_fill()
-turtle.penup()
-turtle.goto(-40,-25)
+turtle.goto(pos1)
 turtle.right(90)
+turtle.forward(80)
+turtle.left(90)
 turtle.pendown()
-dessinMSDA.polygone(60,5)
+rectangle(130, 80)
 turtle.end_fill()
 
-turtle.color("white")
-turtle.fillcolor('white')
+# rectangle3
 turtle.begin_fill()
+turtle.fillcolor("lightblue")
 turtle.penup()
-turtle.goto(-45,-130)
-turtle.right(79)
+turtle.forward(130)
 turtle.pendown()
-dessinMSDA.polygone(60,5)
+rectangle(130, 80)
+pos2 = turtle.position()
+
+# queue
+turtle.penup()
+turtle.forward(130)
+turtle.end_fill()
+turtle.right(60)
+turtle.pendown()
+turtle.forward(80)
+
+turtle.penup()
+turtle.left(60)
+turtle.pendown()
+turtle.forward(60)
+
+turtle.penup()
+turtle.left(115)
+turtle.pendown()
+turtle.forward(120)
+turtle.right(50)
+turtle.forward(120)
+turtle.left(115)
+turtle.forward(60)
+turtle.left(60)
+turtle.forward(80)
 turtle.end_fill()
 
-# turtle.color("white")
-# turtle.fillcolor('white')
-# turtle.begin_fill()
-# turtle.penup()
-# turtle.goto(-82,-45)
-# turtle.right(30)
-# turtle.pendown()
-# dessinMSDA.polygone(22,6)
-# turtle.end_fill()
+# ailes
+turtle.begin_fill()
+turtle.fillcolor("lightblue")
+turtle.penup()
+turtle.goto(pos2)
+turtle.right(60)
+turtle.pendown()
+trapeze_rect(130, 50, 172, "gauche")
+turtle.end_fill()
+
+turtle.begin_fill()
+turtle.fillcolor("lightblue")
+turtle.penup()
+turtle.goto(pos1)
+turtle.right(96)
+turtle.forward(130)
+turtle.left(180)
+turtle.pendown()
+trapeze_rect(130, 50, 172, "droite")
+turtle.end_fill()
+
+turtle.penup()
+turtle.goto(1000, 1000)
+turtle.pendown()
+
 
 turtle.done()
