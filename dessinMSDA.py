@@ -43,11 +43,11 @@ def polygone(cote, nb_cote):
 def trapeze(grande_base, petite_base, hauteur):
     turtle.forward(grande_base)
     turtle.left(120)
-    turtle.forward(hauteur)
+    turtle.forward(min(grande_base, petite_base))
     turtle.left(60)
     turtle.forward(petite_base)
     turtle.left(60)
-    turtle.forward(hauteur)
+    turtle.forward(min(grande_base, petite_base))
 
 
 def losange(cote):
@@ -73,6 +73,4 @@ turtle.title("PROJET PYTHON M1SDA AVEC TURTLE")
 turtle.bgcolor("skyblue")
 # turtle.pensize(2)
 
-trapeze(100, 50, 20)
-
-turtle.done()
+# fermer la boucle
