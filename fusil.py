@@ -1,5 +1,7 @@
 import turtle
 
+import dessinMSDA
+
 
 turtle.goto(-50, 0)
 turtle.pensize(2)
@@ -168,14 +170,14 @@ turtle.circle(5)
 turtle.penup()
 turtle.setposition(-75.00,-310.02)
 turtle.pendown()
-turtle.forward(144)
-turtle.left(142)
-turtle.forward(78)
-turtle.left(40)
-turtle.forward(30)
-turtle.left(30)
-turtle.forward(77)
-
+# turtle.forward(144)
+# turtle.left(142)
+# turtle.forward(78)
+# turtle.left(40)
+# turtle.forward(30)
+# turtle.left(30)
+# turtle.forward(77)
+dessinMSDA.trapeze(60, 30, 40)
 
 
 turtle.done()

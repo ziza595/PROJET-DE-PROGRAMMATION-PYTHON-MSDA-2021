@@ -3,6 +3,7 @@ import math
 
 
 turtle.color("skyblue")
+turtle.bgcolor("gray")
 
 # rectangle
 def rectangle(longeur, largeur):
