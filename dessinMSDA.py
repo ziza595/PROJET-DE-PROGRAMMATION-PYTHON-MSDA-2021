@@ -10,7 +10,6 @@ from math import sqrt
 #===================================================================#
 
 title("PROJET DE PROGRAMMATION PYTHON :-) Turtle | MSDA")
-bgcolor("lightcyan")
 shape("turtle")
 pencolor("#aaa")
 

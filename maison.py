@@ -4,38 +4,45 @@ import dessinMSDA
 
 turtle.penup()
 turtle.goto(-100,-180)
-turtle.left(90)
+#turtle.left(90)
 turtle.pendown()
-dessinMSDA.carre(200)
+dessinMSDA.carre(200,"orange")
 
 turtle.penup()
 turtle.goto(-125,20)
-turtle.right(90)
+#turtle.right(90)
 turtle.pendown()
-dessinMSDA.triangle(255)
+dessinMSDA.triangle(255,"brown")
 
+#porte
 turtle.penup()
 turtle.goto(-30,-165)
 turtle.pendown()
 turtle.left(90)
-dessinMSDA.rectangle(100,50)
+dessinMSDA.rectangle(100,50,"gray")
 
 
 turtle.penup()
 turtle.goto(50,-45)
 turtle.pendown()
 for i in range(4):
-    dessinMSDA.carre(25)
+    dessinMSDA.carre(25,"gray")
     turtle.right(90)
 
 turtle.penup()
-turtle.goto(70,120)
+turtle.goto(70,70)
 turtle.pendown()
-dessinMSDA.rectangle(60,20)
+dessinMSDA.rectangle(60,20,"brown")
 
 turtle.penup()
 turtle.goto(-100,-180)
 turtle.pendown()
 turtle.right(90)
-dessinMSDA.rectangle(200,15)
+dessinMSDA.rectangle(200,15,"gray")
+
+turtle.penup()
+turtle.goto(-83,-179)
+turtle.pendown()
+#turtle.left(90)
+dessinMSDA.rectangle(56,12,"black")
 turtle.done()
