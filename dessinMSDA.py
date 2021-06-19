@@ -2,22 +2,24 @@
 #                   IMPORT DU MODULE TURTLE                         #
 #===================================================================#
 
-import turtle
+from turtle import *
+from math import sqrt
 
 #===================================================================#
 #                   PERSONNALISATION DE L'INTERFACE                 #
 #===================================================================#
 
-turtle.title("PROJET PYTHON M1SDA AVEC TURTLE") # titre
-turtle.bgcolor("skyblue") # arrière plan
-turtle.pensize(2) # épaisseur de ligne
+title("PROJET DE PROGRAMMATION PYTHON :-) Turtle | MSDA")
+bgcolor("lightcyan")
+shape("turtle")
+pencolor("#aaa")
 
 
 #===================================================================#
 #                   DEFINITION DES FONCTIONS                        #
 #===================================================================#
 
-def cercle(rayon):
+def cercle(rayon, couleur):
     """Objectif:
 
     Dessine un cercle avec un rayon donné.
@@ -47,10 +49,13 @@ def cercle(rayon):
     `cercle(50)`
     """
 
-    turtle.circle(rayon)
+    fillcolor(couleur)
+    begin_fill()
+    circle(rayon)
+    end_fill()
 
 
-def demi_cercle(rayon):
+def demi_cercle(rayon, couleur):
     """Objectif:
 
     Dessine un demi-cercle avec un rayon donné.
@@ -78,10 +83,13 @@ def demi_cercle(rayon):
     `demi-cercle(100)`
     """
 
-    turtle.circle(rayon, 180)
+    fillcolor(couleur)
+    begin_fill()
+    circle(rayon, 180)
+    end_fill()
 
 
-def carre(cote):
+def carre(longueur, couleur):
     """Objectif:
 
     Dessine un carré de côté donné.
@@ -108,14 +116,15 @@ def carre(cote):
     `carre(50)`
     """
 
-    compteur = 0
-    while compteur < 4:
-        turtle.forward(cote)
-        turtle.right(90)
-        compteur += 1
+    fillcolor(couleur)
+    begin_fill()
+    for i in range(4):
+        forward(longueur)
+        left(90)
+    end_fill()
 
 
-def triangle(cote):
+def triangle(longueur, couleur):
     """Objectif:
 
     Dessine un carré de côté donné.
@@ -142,54 +151,68 @@ def triangle(cote):
     `carre(50)`
     """
 
-    compteur = 0
-    while compteur < 3:
-        turtle.forward(cote)
-        turtle.left(120)
-        compteur += 1
+    fillcolor(couleur)
+    begin_fill()
+    forward(longueur)
+    left(135)
+    forward(longueur / sqrt(2))
+    left(90)
+    forward(longueur / sqrt(2))
+    left(135)
+    end_fill()
 
 
-def rectangle(longeur, largeur):
-    compteur = 0
-    while compteur < 2:
-        turtle.forward(longeur)
-        turtle.left(90)
-        turtle.forward(largeur)
-        turtle.left(90)
-        compteur += 1
+def rectangle(largeur, hauteur, couleur):
+    fillcolor(couleur)
+    begin_fill()
+    for i in range(2):
+        forward(largeur)
+        left(90)
+        forward(hauteur)
+        left(90)
+    end_fill()
 
 
 def polygone(cote, nb_cote):
     turtle.circle(cote, steps=nb_cote)
 
 
-def trapeze(grande_base, petite_base):
-    turtle.forward(grande_base)
-    turtle.left(120)
-    turtle.forward(min(grande_base, petite_base))
-    turtle.left(60)
-    turtle.forward(petite_base)
-    turtle.left(60)
-    turtle.forward(min(grande_base, petite_base))
+def trapeze(longueur, pb, couleur):
+    fillcolor(couleur)
+    begin_fill()
+    forward(longueur / sqrt(2))
+    forward(pb)
+    forward(longueur / sqrt(2))
+    left(135)
+    forward(longueur)
+    left(45)
+    forward(pb)
+    left(45)
+    forward(longueur)
+    left(135)
+    end_fill()
 
 
-def losange(cote):
-    turtle.left(120)
-    turtle.forward(cote)
-    turtle.left(120)
-    turtle.forward(cote)
-    turtle.left(60)
-    turtle.forward(cote)
-    turtle.left(120)
-    turtle.forward(cote)
+def losange(longueur, couleur):
+    fillcolor(couleur)
+    begin_fill()
+    left(120)
+    forward(longueur)
+    left(120)
+    forward(longueur)
+    left(60)
+    forward(longueur)
+    left(120)
+    forward(longueur)
+    end_fill()
 
-def ellipse(rayon):
-    turtle.left(45)
+def ellipse(rayon, couleur):
+    fillcolor(couleur)
+    begin_fill()
+    left(45)
     compteur = 0
     while compteur < 2:
-        turtle.circle(rayon, 90)
-        turtle.circle(rayon/2, 90)
+        circle(rayon, 90)
+        circle(rayon/2, 90)
         compteur += 1
-
-trapeze(100, 50)
-turtle.done()
+    end_fill()

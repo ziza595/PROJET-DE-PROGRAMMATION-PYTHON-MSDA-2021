@@ -1,183 +1,123 @@
-import turtle
-
+from turtle import *
 import dessinMSDA
 
 
-turtle.goto(-50, 0)
-turtle.pensize(2)
+def fusil():
+    # deplacer le curseur
+    penup()
+    goto(-75, 150)
+    pendown()
+    # tracer le triangle d'en-tête
+    dessinMSDA.triangle(150, "green")
+    # tracer le carré interne
+    penup()
+    goto(-25, 150)
+    pendown()
+    dessinMSDA.carre(50, "skyblue")
+    # trapèze avec rectangle interne
+    penup()
+    goto(-102, 86)
+    pendown()
+    dessinMSDA.trapeze(90, 75, "maroon")
+    # rectangle interne
+    penup()
+    goto(-39, 87)
+    pendown()
+    dessinMSDA.rectangle(75, 63, "purple")
+    # trapèze étendu avec rectangle interne
+    penup()
+    goto(-123, 66)
+    pendown()
+    dessinMSDA.trapeze(30, 204, "violetred")
+    # rectangle interne
+    penup()
+    goto(-102, 66)
+    pendown()
+    dessinMSDA.rectangle(204, 21, "lightblue")
+    # grand rectangle
+    penup()
+    goto(-123, 36)
+    pendown()
+    dessinMSDA.rectangle(246, 31, "lightgreen")
+    # rectangle interne
+    penup()
+    goto(-102, 36)
+    pendown()
+    dessinMSDA.rectangle(204, 31, "sandybrown")
+    # triangles quelconques
+    penup()
+    goto(-123, 36)
+    right(80)
+    pendown()
+    fillcolor("darkblue")
+    begin_fill()
+    forward(80)
+    left(165)
+    forward(80)
+    end_fill()
 
-# triangle
-for i in range(3):
-    turtle.forward(100)
-    turtle.left(120)
-pos1 = turtle.position()
-# carré
-turtle.penup()
-turtle.goto(-25, 0)
-turtle.pendown()
-for i in range(4):
-    turtle.forward(48)
-    turtle.left(90)
+    penup()
+    goto(123, 36)
+    left(180)
+    pendown()
+    fillcolor("darkblue")
+    begin_fill()
+    forward(80)
+    right(165)
+    forward(80)
+    right(100)
+    end_fill()
+    # cercles disjoints
+    penup()
+    goto(-75, -20)
+    pendown()
+    dessinMSDA.cercle(25, "orange")
 
-def trapeze(a, b):
-    turtle.forward(a)
-    turtle.left(120)
-    turtle.forward(b)
-    turtle.left(60)
-    turtle.forward(b)
-    turtle.left(60)
-    turtle.forward(b)
+    penup()
+    goto(75, -20)
+    pendown()
+    dessinMSDA.cercle(25, "orange")
+    # carré centré
+    penup()
+    goto(-30, -24)
+    pendown()
+    dessinMSDA.carre(60, "green")
+    # avant dernier rectangle
+    penup()
+    goto(-70, -74)
+    pendown()
+    dessinMSDA.rectangle(140, 50, "yellow")
+    # petit carré
+    penup()
+    goto(-15, -104)
+    pendown()
+    dessinMSDA.carre(30, "red")
+    # dernier trapèze
+    penup()
+    goto(-85, -173)
+    pendown()
+    dessinMSDA.trapeze(100, 30, "blue")
+    # rectangle interne
+    penup()
+    forward(70)
+    pendown()
+    dessinMSDA.rectangle(30, 70, "salmon")
+    # deux petits cercles
+    penup()
+    goto(-30, -95)
+    pendown()
+    dessinMSDA.cercle(7, "darkred")
 
-# trapèze
-turtle.penup()
-turtle.setposition(-100.00, -87.00)
-turtle.pendown()
-trapeze(200, 100)
-# rectangle
-turtle.penup()
-turtle.setposition(pos1)
-turtle.left(30)
-turtle.pendown()
-turtle.forward(88)
-turtle.penup()
-turtle.setposition(50.00,0.00)
-turtle.pendown()
-turtle.forward(88)
-
-# trapèze
-turtle.penup()
-turtle.setposition(-115.00, -114.00)
-turtle.left(90)
-turtle.pendown()
-turtle.forward(230)
-turtle.left(120)
-turtle.forward(30)
-turtle.left(60)
-pos2 = turtle.position()
-turtle.forward(200)
-turtle.left(60)
-pos3 = turtle.position()
-turtle.forward(30)
-# rectangle
-turtle.penup()
-turtle.goto(pos3)
-turtle.left(30)
-turtle.pendown()
-turtle.forward(26)
-pos4 = turtle.position()
-turtle.penup()
-turtle.goto(pos2)
-turtle.pendown()
-turtle.forward(26)
-pos5 = turtle.position()
-
-# rectangle
-turtle.penup()
-turtle.setposition(-115.00, -147.00)
-turtle.left(90)
-turtle.pendown()
-turtle.forward(230)
-turtle.left(90)
-turtle.forward(33)
-turtle.left(90)
-turtle.forward(230)
-turtle.left(90)
-turtle.forward(33)
-# semi-rectangle
-turtle.penup()
-turtle.goto(pos4)
-turtle.pendown()
-turtle.forward(33)
-pos6 = turtle.position()
-turtle.penup()
-turtle.goto(pos5)
-turtle.pendown()
-turtle.forward(33)
-pos7 = turtle.position()
-
-# triangle quelconque
-turtle.penup()
-turtle.setposition(pos6)
-turtle.right(8)
-turtle.pendown()
-turtle.forward(50)
-turtle.right(162)
-turtle.forward(50)
-
-# triangle quelconque
-turtle.penup()
-turtle.setposition(pos7)
-turtle.left(170)
-turtle.left(8)
-turtle.pendown()
-turtle.forward(50)
-turtle.left(162)
-turtle.forward(50)
-
-# rectangle
-turtle.penup()
-turtle.setposition(-20.00,-147.02)
-turtle.left(190)
-turtle.pendown()
-for i in range(2):
-    turtle.forward(50)
-    turtle.left(90)
-    turtle.forward(40)
-    turtle.left(90)
-
-# cercles
-turtle.penup()
-turtle.setposition(-80.00,-170.02)
-turtle.pendown()
-turtle.circle(18)
-
-turtle.penup()
-turtle.setposition(45.00,-170.02)
-turtle.pendown()
-turtle.circle(18)
-
-# rectangle
-turtle.penup()
-turtle.setposition(-50.00,-197.02)
-turtle.pendown()
-for i in range(2):
-    turtle.forward(40)
-    turtle.left(90)
-    turtle.forward(100)
-    turtle.left(90)
-
-# carré
-turtle.penup()
-turtle.setposition(-15.00,-237.02)
-turtle.pendown()
-for i in range(4):
-    turtle.forward(30)
-    turtle.left(90)
-
-# cercles
-turtle.penup()
-turtle.setposition(-30.00,-255.02)
-turtle.left(90)
-turtle.pendown()
-turtle.circle(5)
-
-turtle.penup()
-turtle.setposition(30.00,-255.02)
-turtle.pendown()
-turtle.circle(5)
-
-# trapeze
-turtle.penup()
-turtle.setposition(-75.00,-310.02)
-turtle.pendown()
-# turtle.forward(144)
-# turtle.left(142)
-# turtle.forward(78)
-# turtle.left(40)
-# turtle.forward(30)
-# turtle.left(30)
-# turtle.forward(77)
-dessinMSDA.trapeze(60, 30, 40)
+    penup()
+    goto(30, -95)
+    pendown()
+    dessinMSDA.cercle(7, "darkred")
+    # fin
+    penup()
+    goto(0, -200)
+    pendown()
 
 
-turtle.done()
+if __name__ == "__main__":
+    fusil()
+    done()
