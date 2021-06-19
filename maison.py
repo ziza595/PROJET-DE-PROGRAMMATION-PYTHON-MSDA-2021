@@ -4,11 +4,13 @@ import dessinMSDA
 
 turtle.penup()
 turtle.goto(-100,-180)
+turtle.left(90)
 turtle.pendown()
 dessinMSDA.carre(200)
 
 turtle.penup()
 turtle.goto(-125,20)
+turtle.right(90)
 turtle.pendown()
 dessinMSDA.triangle(255)
 
