@@ -3,6 +3,7 @@ import dessinMSDA
 
 
 def avion():
+    """Affiche la figure représentant l'avion"""
     # deplacer le curseur
     penup()
     goto(100, 50)
