@@ -38,7 +38,7 @@ module(avion.py, maison.py, fusee.py, et figure_choix.py).
 
 On a pris le soin de bien commenter l'ensemble des fonctions que nous avons implanté dans notre projet. 
 
-Les 4 fichiers à savoir : `maison.py`, `fusee.py`, `avion.py` et `robot.py` **(qui représente notre notre figure au choix)** peuvent être exécuter directement dans la console avec la commande : `py nom_fichier.py` (si vous avez la dernière version de Python et sous Windows) ou `python3 nom_fichier.py` (si vous êtes sous Linux avec la version 3 de Python) ou bien dans un éditeur simple ayant l'extension de Python.
+Les 4 fichiers à savoir : `maison.py`, `fusee.py`, `avion.py` et `robot.py` **(qui représente notre notre figure au choix)** peuvent être exécuté directement dans la console avec la commande : `py nom_fichier.py` (si vous avez la dernière version de Python et sous Windows) ou `python3 nom_fichier.py` (si vous êtes sous Linux avec la version 3 de Python) ou bien dans un éditeur simple ayant l'extension de Python.
 
 ## Capture des résultats obtenus aprés exécution :
 
