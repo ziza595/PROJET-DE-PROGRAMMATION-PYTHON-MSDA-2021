@@ -29,13 +29,11 @@ def maison():
 
     turtle.penup()
     turtle.goto(-100,-180)
-    #turtle.left(90)
     turtle.pendown()
     dessinMSDA.carre(200,"orange")
 
     turtle.penup()
     turtle.goto(-125,20)
-    #turtle.right(90)
     turtle.pendown()
     dessinMSDA.triangle(255,"brown")
 
@@ -68,7 +66,6 @@ def maison():
     turtle.penup()
     turtle.goto(-83,-179)
     turtle.pendown()
-    #turtle.left(90)
     dessinMSDA.rectangle(56,12,"black")
     # fin
     turtle.penup()
