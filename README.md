@@ -50,23 +50,23 @@ L'ensemble des fonctions qui ont servi utilitaires à la conception de notre mod
 - **Pour `maison.py` on a :**
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ziza595/PROJET-DE-PROGRAMMATION-PYTHON-MSDA-2021/main/img/maison.png" width="300px" height="200px">
+  <img src="https://raw.githubusercontent.com/ziza595/PROJET-DE-PROGRAMMATION-PYTHON-MSDA-2021/main/img/maison.png" width="500px" height="400px">
 </p>
 
 - **Pour `fusee.py` on a :**
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ziza595/PROJET-DE-PROGRAMMATION-PYTHON-MSDA-2021/main/img/fusee.png" width="300px" height="200px">
+  <img src="https://raw.githubusercontent.com/ziza595/PROJET-DE-PROGRAMMATION-PYTHON-MSDA-2021/main/img/fusee.png" width="500px" height="400px">
 </p>
 
 - **Pour `avion.py` on a :**
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ziza595/PROJET-DE-PROGRAMMATION-PYTHON-MSDA-2021/main/img/avion.png" width="300px" height="200px">
+  <img src="https://raw.githubusercontent.com/ziza595/PROJET-DE-PROGRAMMATION-PYTHON-MSDA-2021/main/img/avion.png" width="500px" height="400px">
 </p>
 
 - **Et pour `robot.py` on a :**
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ziza595/PROJET-DE-PROGRAMMATION-PYTHON-MSDA-2021/main/img/robot.png" width="300px" height="200px">
+  <img src="https://raw.githubusercontent.com/ziza595/PROJET-DE-PROGRAMMATION-PYTHON-MSDA-2021/main/img/robot.png" width="500px" height="400px">
 </p>
