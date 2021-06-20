@@ -3,6 +3,30 @@ import dessinMSDA
 
 
 def maison():
+    """Objectif:
+    Dessine une maison en case avec le module `turtle`
+    
+    Méthode:
+    Conçu à l'aide des fonctions du module `dessinMSDA`
+
+    Besoins: 
+    -
+
+    Entrées: 
+    -
+
+    Connues: 
+    -
+
+    Sorties: 
+    Une maison en case
+
+    Résultat: 
+    -
+
+    Hypothèses: importer les modules `turtle` et `dessinMSDA`
+    """
+
     turtle.penup()
     turtle.goto(-100,-180)
     #turtle.left(90)
