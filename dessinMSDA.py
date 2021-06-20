@@ -1,22 +1,35 @@
-# ===================================================================#
-#                   IMPORT DU MODULE TURTLE                          #
-# ===================================================================#
+#####################################################################
+#                                                                   #
+# Programme Python avec le module turtle                            #
+# Auteurs: Abdoul Aziz BA alias AAB et Khadidiatou YADE alias KY    #
+# Contacts :    AAB · ziza595@gmail.com &                           #
+#               KY · khadidiatou.yade@univ-thies.sn                 #
+# Master en Science de données et Intelligence Artificielle         #
+#                      à l'UIDT                                     #
+#                                                                   #
+#####################################################################
+
+
+
+# ==================================================================#
+#                   IMPORT DES MODULES EXTERNES                     
 
 from turtle import *
 from math import sqrt
 
-# ===================================================================#
-#                   PERSONNALISATION DE L'INTERFACE                  #
-# ===================================================================#
+
+# ==================================================================#
+#                   PERSONNALISATION DE L'INTERFACE                 
 
 title("PROJET DE PROGRAMMATION PYTHON :-) Turtle | MSDA")
 shape("turtle")
 pencolor("#aaa")
+bgcolor("#f1f3f4")
 
 
-# ===================================================================#
-#                   DEFINITION DES FONCTIONS                         #
-# ===================================================================#
+# ==================================================================#
+#                   DEFINITION DES FONCTIONS                        
+
 
 
 def cercle(rayon, couleur):
