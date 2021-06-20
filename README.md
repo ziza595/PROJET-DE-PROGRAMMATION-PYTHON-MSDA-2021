@@ -35,3 +35,38 @@ module(avion.py, maison.py, fusee.py, et figure_choix.py).
 1. Définition de toutes les fonctions dans le module dessinMSDA accompagnée des commentaires de spécification ;
 2. Représentation des tableaux de flux ;
 3. La définition des 4 fonctions permettant de représenter les quatres figures.
+
+On a pris le soin de bien commenter l'ensemble des fonctions que nous avons implanté dans notre projet. 
+
+Les 4 fichiers à savoir : `maison.py`, `fusee.py`, `avion.py` et `robot.py` **(qui représente notre notre figure au choix)** peuvent être exécuté directement dans la console avec la commande : `py nom_fichier.py` (si vous avez la dernière version de Python et sous Windows) ou `python3 nom_fichier.py` (si vous êtes sous Linux avec la version 3 de Python) ou bien dans un éditeur simple ayant l'extension de Python.
+
+
+## Tableau des flux :
+
+L'ensemble des fonctions qui ont servi utilitaires à la conception de notre module et des fonctions `maison.py`, `fusee.py`, `avion.py` et `robot.py` sont illustrées dans le tableau des flux ci-dessous :
+
+## Capture des résultats obtenus aprés exécution :
+
+- **Pour `maison.py` on a :**
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ziza595/PROJET-DE-PROGRAMMATION-PYTHON-MSDA-2021/main/img/maison.png" width="500px" height="400px">
+</p>
+
+- **Pour `fusee.py` on a :**
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ziza595/PROJET-DE-PROGRAMMATION-PYTHON-MSDA-2021/main/img/fusee.png" width="500px" height="400px">
+</p>
+
+- **Pour `avion.py` on a :**
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ziza595/PROJET-DE-PROGRAMMATION-PYTHON-MSDA-2021/main/img/avion.png" width="500px" height="400px">
+</p>
+
+- **Et pour `robot.py` on a :**
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ziza595/PROJET-DE-PROGRAMMATION-PYTHON-MSDA-2021/main/img/robot.png" width="500px" height="400px">
+</p>
