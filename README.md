@@ -45,6 +45,10 @@ Les 4 fichiers à savoir : `maison.py`, `fusee.py`, `avion.py` et `robot.py` **(
 
 L'ensemble des fonctions qui ont servi utilitaires à la conception de notre module et des fonctions `maison.py`, `fusee.py`, `avion.py` et `robot.py` sont illustrées dans le tableau des flux ci-dessous :
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ziza595/PROJET-DE-PROGRAMMATION-PYTHON-MSDA-2021/main/img/flux_donnée.JPG" width="500px" height="400px">
+</p>
+
 ## Capture des résultats obtenus aprés exécution :
 
 - **Pour `maison.py` on a :**
